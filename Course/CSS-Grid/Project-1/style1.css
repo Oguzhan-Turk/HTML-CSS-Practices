@@ -1,0 +1,82 @@
+main {
+  display: grid;
+  background-color: bisque;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  padding: 15px;
+}
+section.cell {
+  background-color: brown;
+  min-height: 200px;
+  margin: 5px;
+}
+#firstrow {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+section.secondrow {
+  background-color: burlywood;
+}
+#farrightcolumn {
+  /* grid-row-start: 2;
+    grid-row-end: 6; */
+  grid-row: 2/6;
+  grid-column: 5/6;
+  background-color: chartreuse;
+}
+section.middleleftcell {
+  background-color: coral;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+section.middlerightcell {
+  background-color: darkcyan;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+section.bottomcell {
+  background-color: darkgoldenrod;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+@media only screen and (max-width: 700px) {
+  main {
+    background-color:  bisque;;
+    grid-template-columns: auto ;
+    padding: 5px;
+  }
+  section.cell {
+    background-color: brown;
+    min-height: 200px;
+    margin: 5px;
+  }
+  #firstrow {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  section.secondrow {
+    background-color: burlywood;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  #farrightcolumn {
+    display: none ;
+  }
+  section.middleleftcell {
+    background-color: thistle;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  section.middlerightcell {
+    background-color: darkcyan;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  section.bottomcell {
+    background-color: darkgoldenrod;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  
+}
