@@ -1,0 +1,41 @@
+/* CSS Selectors*/
+/* .(nokta) ile sınıf seçimi yapılabilir. */
+/*element ismi ile herjhangi bir html elementine css uygulanabilir. */
+/* 
+div.icdiv {
+    /* Internal CSS 
+    background-color: rosybrown;
+    margin: 10px;
+}
+*/
+div#main{
+    width: 1200px;  /* sayfamızın genişliği  */
+      margin: 0 auto; /* sağdan soldan otomatik genişlik */
+}
+.icdiv {
+    background-color: rosybrown;
+    margin: 10px;
+     padding: 5px; 
+}
+    #btnSliderLeft, #btnSliderRight
+    {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: cursive;
+        background: rgb(189, 156, 192);
+        width: 5%;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 240px;
+        float: left;
+    }
+    div#slider{
+        font-size: 30px;
+        height: 250px;
+        width: 90%;
+        background-color: antiquewhite;
+        float: left;
+    }
+
+    
