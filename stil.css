@@ -32,10 +32,49 @@ div#main{
     }
     div#slider{
         font-size: 30px;
-        height: 250px;
+        height: 100%;
         width: 90%;
         background-color: antiquewhite;
         float: left;
+    }
+    
+    div#alt-orta-sol{
+        background-color: cornflowerblue;
+        width: 80%;
+        float: left;
+    }
+    div#alt-orta-sag{
+        background-color:rgb(114, 148, 146);
+        width: 20%;
+        height: 56%;
+        float: left;
+        text-align: center;
+    }
+    .minheight-600
+    {
+        min-height: 600px;
+    }
+    .h-175{
+        height: 175px;
+    }
+    .h-250{
+        height: 250px;
+    }
+    #kutular{
+    
+        text-align: center;
+        padding: 20px;
+    }
+    #genel-icerik{
+
+        background-color: rgb(137, 197, 172);
+    }
+    #kutular span{
+        margin: 0 50px;
+    }
+    #alt-orta-sag span{
+       
+        margin: 15;
     }
 
     
