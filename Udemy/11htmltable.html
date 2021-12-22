@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 3px solid rgb(170, 184, 44);
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 15px;
+            text-align: left;
+        }
+        caption {
+            font-size: 32px;
+        }
+        #table1 tr:nth-child(even){
+            background-color: brown;
+        }
+        #table1 tr:nth-child(odd){
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table1" style="width: 50%;">
+        <caption>Deneme Tablosu</caption>
+        <tr>
+            <th>
+                İsim
+            </th>
+            <th>
+                Soyisim
+            </th>
+            <th>
+                Yaş
+            </th>
+            <th colspan="2">
+                Adres
+            </th>
+            <th>
+                Resim
+            </th>
+        </tr>
+        <tr>
+            <td>
+                oguzhan
+            </td>
+            <td>
+                turk
+            </td>
+            <td>
+                25
+            </td>
+            <td>
+                Ankara
+            </td>
+            <td>
+                Bursa
+            </td>
+            <td>
+                <img src="img/profiladam2.png" alt="" style="width: 50px; height: 50px;">
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
