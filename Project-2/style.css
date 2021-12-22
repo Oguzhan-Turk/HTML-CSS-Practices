@@ -1,0 +1,89 @@
+body
+{
+    background-color: rgb(145, 223, 233);
+    padding: 0;
+    margin: 0;
+}
+#main
+{
+    width: 900px;
+    margin:0 auto;
+}
+.header 
+{
+    height: 25%;
+    max-height: 180px;
+    background-color: #9ac5c4;
+    margin: 0 0 1px 0;
+}
+.content 
+{
+    height: 25%;
+    height: 500px;
+    background-color: rgb(183, 91, 245);
+
+}
+.footer
+{
+    height: 50%;
+    min-height: 200px;
+    background-color: rgb(24, 255, 217);
+}
+.content-left
+{
+    width: 75%;
+    min-height: 498px;
+    background-color: floralwhite;
+    display: inline-block;
+    /* float: left; /* Açılınca kayıyor!! */
+}
+.content-right
+{
+    width: 24.9%;
+    min-height: 498px;
+    background-color: rgb(230, 213, 120);
+    display: inline-block;
+    float: right;
+
+}
+.user-profile
+{
+    width: 15%;
+    background-color: #9ac5c4;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block; 
+}
+.logo-img{
+margin: 5px;
+}
+.header-right
+{
+    display: inline-block;
+    width: 78.7%;
+    height: 80%;
+
+    /* float: right; */
+    /* margin-top: 0px; */
+}
+.formmain
+{
+    font-size: 20px;
+    font-family: monospace;
+    height: 40px;
+    border-radius: 5px;
+}
+.textbox
+{
+    width: 70.5%;
+}
+.button{
+width: 27.5%;
+}
+.context-texts{
+    font-size: 25px;
+    display: inline-block;
+    color: coral;
+}
