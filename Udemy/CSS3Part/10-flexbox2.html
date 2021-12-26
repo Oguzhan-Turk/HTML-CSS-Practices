@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            height: 400px;
+            background-color: #ccc;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item {
+            width: 200px;
+            min-height: 100px;
+            background-color: orange;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .item1 {
+            flex-grow: 0;
+            flex-shrink: 5;
+            /* order: 3; */
+            align-self: flex-start; /* kendine göre hizalama yapar, flex olarak gelen özelliklerini bir nevi ezmiş de oluruz. */
+        }
+
+        .item2 {
+            flex-grow: 1; /* büyüme oranıdır */
+            /* flex-basis: 0;  */
+            /* order: 1; */
+            flex-shrink: 1; /* varsayılanı 1'dir. küçülme oranıdır */
+            align-self: center;
+        }
+
+        .item3 {
+            flex-grow: 2;
+            flex-shrink: 0; /* küçülmez! */
+            /* order: 2; */
+            align-self: flex-end;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+</body>
+
+</html>

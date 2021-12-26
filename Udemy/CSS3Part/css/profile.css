@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.header{
+background-color: #f39c12;
+color: white;
+padding: 1.5rem;
+
+}
+.header-title{
+    text-align: center;
+    margin: 0;
+}
+
+.section{
+padding: 1rem 2rem;
+}
+
+.section-content{
+    padding: 1rem;
+}
+.section-accent{
+    background-color: #f39c12;
+    color: white;
+}
+
+.section-yetenek, .section-projeler{
+    list-style: none;
+    margin: 0;
+    font-size: 1.1rem;
+}
+.section-projeler {
+    color: #ccc;
+}
+.section-accent h2{
+    color: turquoise;
+    margin: 0;
+}
+.section-projeler li{
+    margin-bottom: 1rem;
+}
+.section-projeler li:last-child{
+    margin: 0;
+}
+.section-iletisim{
+    margin : 1rem 0
+}
+.input{
+    border: 1px solid #ccc;
+    outline :none;
+    padding: .5em;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: inherit;
+    resize: none;
+}
+.input:focus{
+    border-color: 1px solid #f39c12;
+    box-shadow: 0 0 5px 1px #f39c12;
+}
+.btn{
+    background-color: #f39c12;
+    border: 1px solid #7E5109;
+    color: white;
+    padding: .5em 1em;
+    cursor: pointer;
+    outline: none ;
+}
+.btn:hover, btn:focus{
+    background-color: #ca6f1e;
+    box-shadow: 0 0 px 0 #F0b27a;
+}
+ .footer{
+    background-color: #f39c12;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+ }

@@ -43,7 +43,7 @@ body
     min-height: 498px;
     background-color: rgb(230, 213, 120);
     display: inline-block;
-    float: right;
+    /* float: right; */
 
 }
 .user-profile
@@ -70,6 +70,7 @@ margin: 5px;
 }
 .formmain
 {
+    width: 250px;
     font-size: 20px;
     font-family: monospace;
     height: 40px;
@@ -81,6 +82,7 @@ margin: 5px;
 }
 .button{
 width: 27.5%;
+/* float: right; */
 }
 .context-texts{
     font-size: 25px;

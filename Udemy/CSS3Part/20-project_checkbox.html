@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+
+        .my-checkbox{
+            position: absolute;
+            left: -99999px;
+            opacity: 0;
+        }
+        .my-checkbox + label{  /* burada + ile verilen sınıftan hemen sonra gelen labeli hedef almış olduk!  */
+            cursor:pointer;
+            display: flex;
+            align-items: center; /*satıra göre hizaladık, ortalaadık */
+            font-size: 20px;
+        }
+        .my-checkbox + label::before{
+            content: '';
+            width: 1.5em;
+            height: 1.5em;
+            display: inline-block;
+            /* background-color : tomato; */
+            border-radius: .2rem;
+            margin-right: 0.5rem;
+            border: 0.05rem solid black
+        }
+        .my-checkbox + label:hover::before{
+            background-color: #0af;
+        }
+        .my-checkbox:focus + label::before{
+            box-shadow: 0 0 20px 0 black;
+        }
+        .my-checkbox:checked + label::before{
+            content: '\2713';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: wheat;
+            background-color: #069;
+        }
+        .my-checkbox:disabled + label::before{
+            background-color: #ccc;
+            border-color: #999 ;
+        }
+        .my-checkbox:disabled + label{
+            color: #aaa;
+            cursor: not-allowed;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: thistle;">
+    <input class="my-checkbox" type="checkbox" disabled checked name="" id="cb1">
+    <label for="cb1">Checkbox 1</label>
+    <br>
+    <input class="my-checkbox" type="checkbox" disabled checked name="" id="cb2">
+    <label for="cb2">Checkbox 2</label>
+    <br>
+    <input class="my-checkbox" type="checkbox"name="" id="cb3">
+    <label for="cb3">Checkbox 3</label>
+    <br>
+    <input class="my-checkbox" type="checkbox" name="" id="cb4">
+    <label for="cb4">Checkbox 4</label>
+</body>
+</html>

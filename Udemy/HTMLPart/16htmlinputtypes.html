@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="deneme.php" method="get"> <!-- novalidate dersek alt tarafta istedilen required alanlar dolu olmasa dahi form gönderilir.-->
+       Type Text : <input type="text"><br><br>
+       Type Password : <input type="text"><br><br>
+       Type Submit : <input type="submit"><br><br> <!-- formaction="test.php" yukarıda verilen action="deneme.php"i ezerek formu test.php ye gönderir.-->
+       Type Reset : <input type="reset"><br><br>
+       Type Button : <input type="button" onclick="alert('Hello!')" value="Bana Tıkla"><br><br>
+       Type Color : <input type="color" name="color"><br><br>
+       Type Date : <input type="date" name="date" min="2019-04-04"><br><br>
+       Type E-mail : <input type="email" name="email"><br><br>
+       Type File : <input type="file" name="file"><br><br>
+       <!-- Type Month : <input type="month" name="month"><br><br> -->
+       Type Number : <input type="number" name="number" min="18" max="99"><br><br>
+       Type Search : <input type="search" name="search"><br><br>
+       Type PhoneNumber : <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+       Type Time : <input type="time" name="time"><br><br>
+       Type URL : <input type="url" name="url"><br><br>
+       <!-- Type Week : <input type="week" name="week"><br><br> -->
+        
+       <!-- **Attributes**
+        value = ""
+        readonly
+        disabled -- submit edildiğinde verinin gönderilmesini engeller
+        multiple
+        required -- doldurulması zorunlu alanları belirtir
+        step=" " -- kaçar kaçar atlasın sayılar
+        autofocus -- sayfa açıldığında ilk seçilen alanı belirler
+        maxlength=""
+        placegolder=" " -- silik olarak yazı yazar
+        autocomplete -- dolurma önerileri açılır
+   
+        -->
+        
+        
+    </form>
+</body>
+</html>
