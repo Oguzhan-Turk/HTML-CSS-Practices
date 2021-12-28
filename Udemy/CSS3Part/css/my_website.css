@@ -67,25 +67,32 @@ a, a:focus, a:hover{
 }
 .headermid img{
     border-radius: 100px;
-    /* height: auto;
-    width: auto; */
-    margin-left: 10px;
+    height: 80%;
+    width: auto;
+    margin-left: 1em;
+    margin-right: 0.5em;
 }
 .headermid textarea{
     width: 80%;
     height: 80%;
     margin-bottom: 1rem;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: .8rem;
     outline: none;
     font-family: inherit;
     color: inherit ;
-    text-align: center;
+    text-align: start;
     line-height: 1.5rem;
     border : none;
-    box-shadow: 2px 3px lavender;
+    /* box-shadow: 2px 3px lavender; */
     resize: none;
-    background-color: rgb(214, 214, 248);
+    /* background-color: rgb(214, 214, 248); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(224, 224, 245) 70%);
+    /* word-spacing: 5rem; */
+    letter-spacing: 0.090em;
+    text-align: left;
+    overflow: scroll;
+    overflow: hidden;
 }
 .headermid textarea:focus, textarea:hover {
     background: #ff96ad;
@@ -116,10 +123,35 @@ a, a:focus, a:hover{
     background-color: #ff96ad ;
     box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
 }
-.icon{
-border-radius: 25px;
-margin : 0 10px 0 10px;
+.uploadfile{
+/* border-radius: 25px; */
+margin : 0 0.5em 0 0.5em;
 overflow: hidden;
+display: none;
+/* text-align: center; */
+}
+
+.uploadicon{
+ 
+    
+}
+.uploadfile + label{
+    cursor: pointer;
+}
+.uploadfile + label:hover{
+    /*  !! */
+}
+
+.icons{
+    width: 20rem;
+    height: 1.2rem;
+    margin-left: 1.5rem;
+    margin-top: 0.65rem;
+    margin-right: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    /* align-content: space-around; */
+    justify-content: space-between;
 }
 
 .menu{
