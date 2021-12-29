@@ -33,6 +33,9 @@ a, a:focus, a:hover{
     background-color: rgb(214, 214, 248);
     align-items: flex-start;
     flex-direction: column;
+    /* position: sticky; yukarı sabitledik. fixed'e bak!
+    top: 0; */
+    
 }
 
 .headertop{
@@ -98,6 +101,8 @@ a, a:focus, a:hover{
 .headermid textarea:focus, textarea:hover {
     background: #ff96ad;
     box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+    /* transition-delay: 1s; */
+    transition-duration: 2s;
 }
 .headerbottom{
     justify-content: space-between;
@@ -118,12 +123,14 @@ a, a:focus, a:hover{
     width: 100px;
     cursor: pointer;
     /* margin-left: 3rem; */
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0, 0, 0.29, 0.68);
 }
 #tbutton:hover{
     border: 2px solid lemonchiffon;
     color: lemonchiffon;
     background-color: #ff96ad ;
-    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;  
 }
 .uploadfile{
 /* border-radius: 25px; */
@@ -140,6 +147,8 @@ display: none;
     cursor: pointer;
     padding: 0.25em;
     border-radius: 100px;
+    /* transition-delay: 0.5s; */
+    transition-duration: 1s;
 }
 .uploadicon:hover{
     background-color: #ff96ad;
@@ -164,13 +173,13 @@ display: none;
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    
    
 }
 .menutop{
     height: 10%;
     width: 100%;
     text-align: center;
+    
 }
 
 .menumid{
@@ -213,11 +222,14 @@ border-radius: 20px;
     padding-left: 0.9em;
     /* top: -5%; */
     /* left: 10%; */
+        /* transition-delay: 1s; */
+        transition-duration: 1s;
 }
 .action a:hover{
     background-color: rgb(231, 189, 152);
     box-shadow: 0 0 5px rgb(231, 189, 152), 0 0 25px rgb(231, 189, 152), 0 0 50px rgb(231, 189, 152), 0 0 200px rgb(231, 189, 152);
     border-radius: 1.5rem;
+
 }
 .action span{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -243,12 +255,14 @@ border-radius: 20px;
     height: 5em;
     width: 16em;
     background-color:lightyellow;
+    transition-duration: 1s;
 }
 #menusharelabel:hover{
     border: 2px solid lemonchiffon;
     color: lemonchiffon;
     background-color: cadetblue ;
     box-shadow: 0 0 5px cadetblue, 0 0 25px cadetblue, 0 0 50px cadetblue, 0 0 200px cadetblue;
+    
 }
 
 
