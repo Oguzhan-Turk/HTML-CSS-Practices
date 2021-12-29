@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #kutu
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .ickutu
+        {
+            width:200px;
+            margin: 10px;
+        }
+        </style>
+    </head>
+<body>
+    <div id="kutu" style="height: 200px; background-color: brown; padding: 50px;">
+
+        <div class="ickutu" style="height: 200px; background-color: burlywood;;">11</div>
+        <div class="ickutu" style="height: 200px; background-color: blueviolet;">22</div>
+        <div class="ickutu" style="height: 200px; background-color: burlywood;;">33</div>
+        <div class="ickutu" style="height: 200px; background-color: blueviolet;">44</div>
+        <hr>
+        <div><a href="">Hello World</a></div>
+    </div>
+
+        <script>
+            // ID selector
+            let kutum = document.getElementById('kutu'); //dom'daki nesneye eriştik.
+            kutum.style.background="tomato"; // html elementinin stilini değiştirdik.
+            
+            // Class : class birden fazla element getirebilir. O yüzden cooleciton döndürür.
+            let ickutular = document.getElementsByClassName('ickutu');
+            for(let i=0; i<ickutular.length;i++){
+                console.log(ickutular[i].innerHTML);
+                ickutular[i].style.background="#9465ab"
+            }   
+            let aelement = document.getElementsByTagName("a");
+            for(let element of aelement){
+                element.style.textDecoration="none";
+                let newSection = "<br><section style='height:100px; background:#456456; margin-left: 5px'></section>"
+                element.innerHTML += " Oguzhan Turk" + newSection;
+                
+            }
+            // querySelector
+            // let kutuDiv = document.querySelector('#kutu');
+            // kutuDiv.style = "flex-direaction: column !important; background:#ebebeb"
+            // console.log(kutuDiv)
+
+        </script>
+</body>
+</html>
